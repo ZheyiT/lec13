@@ -1,0 +1,13 @@
+import plotly
+print(plotly.__version__)
+
+import plotly.plotly as py
+import plotly.graph_objs as go
+
+data = [go.Bar(
+            x=['giraffes', 'orangutans', 'monkeys'],
+            y=[20, 14, 23]
+    )]
+
+py.plot(data, filename='basic-bar')
+
